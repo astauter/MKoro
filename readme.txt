@@ -1,2 +1,1 @@
 Machi Koro
-original
