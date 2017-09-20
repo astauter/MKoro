@@ -5,6 +5,9 @@ target
 build/
 .gradle
 gradle/
+gradlew
+gradlew.bat
+
 # Eclipse Project Files #
 
 .classpath
