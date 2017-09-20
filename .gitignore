@@ -1,3 +1,20 @@
+# Build Files #
+
+bin
+target
+build/
+.gradle
+gradle/
+gradlew
+gradlew.bat
+
+# Eclipse Project Files #
+
+.classpath
+.project
+.settings
+
 /node_modules
 .DS_Store
 package-lock.json
+
