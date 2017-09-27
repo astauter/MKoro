@@ -1,16 +1,32 @@
 <template>
-  <nav class="navbar navbar-default">
-    <a class="navbar-brand" href="/"> {{$store.state.appTitle}} {{$store.state.appVersion}}</a>
-    <ul class="nav navbar-nav navbar-right">
-      <li>
-        <router-link to="/" class="nav-item nav-link"> Home </router-link>
-      </li>
-      <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-    </ul>
-  </nav>
+  <div>
+    <div class="navbar  navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <router-link to="/" class="navbar-brand">CHIRP</router-link>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <router-link to="/" >Home</router-link>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><router-link to="/signup" class="nav-item nav-link"> Sign Up </router-link></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
   export default {
-  };
+  }
 </script>
+
+<style type="text/css">
+  #banner {
+    margin-top: 70px;
+  }
+</style>

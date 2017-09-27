@@ -13,7 +13,6 @@ public class Message {
 	private Date date;
 	private String username;
 	
-	
 	public String getId() {
 		return id;
 	}
