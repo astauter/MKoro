@@ -5,9 +5,9 @@ Vue.use(Vuex);
 
 const state = {
   count: 0,
-  appTitle: 'client',
+  appTitle: 'Mochi Koro',
   appVersion: '0.0.1',
-}
+};
 
 const mutations = {
   INCREMENT(state) { state.count++ }
