@@ -2,7 +2,7 @@
   <div >
     <div class="row">
       <div class="col-md-4">
-        <!-- <login></login> -->
+        <login></login>
       </div>
       <div class="col-md-8">
         <table id="myTable" width="100%">
@@ -34,7 +34,7 @@
 
 <script>
   import Vue from 'vue';
-  // import Login from './Login'
+  import Login from './Login';
 
   Vue.filter('date-format', value => {
     const date = value.split('T')[0];
@@ -43,7 +43,7 @@
   })
 
   export default {
-    // components: { Login },
+    components: { Login },
 
     name: 'main-panel',
     data() {
@@ -59,11 +59,11 @@
       getMessages() {
         this.$http.get('http://localhost:8081/message').then((res) => {
           this.messages = res.body._embedded.message.reverse();
-          console.log("this.messages", this.messages);
+          console.log('this.messages', this.messages);
           $(document).ready(function() {
             $('#myTable').DataTable({
-              "bSort" : false,
-              "lengthMenu" : [[3,5,10,-1], [3,5,10,"ALL"]],
+              'bSort' : false,
+              'lengthMenu' : [[3,5,10,-1], [3,5,10,'ALL']],
               stateSave: true,
             });
           });

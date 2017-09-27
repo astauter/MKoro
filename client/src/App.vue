@@ -11,9 +11,10 @@
 import Navbar from './components/Navbar';
 import MainPanel from './components/MainPanel';
 import Signup from './components/Signup';
+import Login from './components/Login';
 
 export default {
-  components: { Navbar, MainPanel, Signup },
+  components: { Navbar, MainPanel, Signup, Login },
 };
 </script>
 
