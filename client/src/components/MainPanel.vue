@@ -56,22 +56,29 @@
       this.getMessages();
     },
     methods: {
-      getMessages() {
+      getMessages () {
         this.$http.get('http://localhost:8081/message').then((res) => {
           this.messages = res.body._embedded.message.reverse();
-          console.log('this.messages', this.messages);
-          $(document).ready(function() {
+          console.log(this.messages);
+          $(document).ready(() => {
             $('#myTable').DataTable({
-              'bSort' : false,
-              'lengthMenu' : [[3,5,10,-1], [3,5,10,'ALL']],
-              stateSave: true,
+              bSort: false,
+              menuLength: [[3, 5, 10, -1], [3, 5, 10, 'ALL']],
+              saveState: true,
             });
           });
         }, (err) => {
           console.log(err);
         });
       }
-    }
+    },
 
   }
 </script>
+
+<style type="text/css">
+      
+      #bottom {
+        padding-bottom: 50px;
+      }
+    </style>

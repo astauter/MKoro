@@ -7,12 +7,13 @@ Vue.use(Router);
 import Hello from './components/Hello';
 import MainPanel from './components/MainPanel';
 import Signup from './components/Signup';
+import Welcome from './components/Welcome';
 
 // ==================== Router registration ====================
 export default new Router({
   mode: 'hash',
   routes: [
     { path: '/', component: MainPanel },
-    { path: '/signup', component: Signup },
+    { path: '/signup', component: Welcome },
   ],
 });

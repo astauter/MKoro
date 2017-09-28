@@ -3,7 +3,7 @@
     <div class="navbar  navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <router-link to="/" class="navbar-brand">CHIRP</router-link>
+          <router-link to="/" class="navbar-brand">Mochi Koro</router-link>
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
@@ -28,5 +28,6 @@
 <style type="text/css">
   #banner {
     margin-top: 70px;
+    margin-bottom: 100px;
   }
 </style>
